@@ -11,170 +11,110 @@
         <link rel="stylesheet" href="./styles.css" />
     </head>
     <body>
+        <div class="cursor-glow" aria-hidden="true"></div>
         <main class="page-shell">
-            <section class="hero section">
-                <nav class="topbar" aria-label="Page navigation">
-                    <a class="brand" href="#top" aria-label="Warhammer Rule Assistant">
-                        <img
-                            src="./assets/Warhammer.png"
-                            alt="Warhammer Rule Assistant logo"
-                            width="72"
-                            height="72"
-                        />
-                        <span>Warhammer Rule Assistant</span>
-                    </a>
-                    <div class="nav-links">
-                        <a href="#concept">What</a>
-                        <a href="#audience">Who</a>
-                        <a href="#demo">How</a>
-                    </div>
+            <header class="header">
+                <a class="brand" href="#top" aria-label="Warhammer Rule Assistant">
+                    <img
+                        src="./assets/Warhammer.png"
+                        alt="Warhammer Rule Assistant logo"
+                        width="64"
+                        height="64"
+                    />
+                    <span>Warhammer Rule Assistant</span>
+                </a>
+                <nav class="nav" aria-label="Page sections">
+                    <a href="#concept">What</a>
+                    <a href="#audience">Who</a>
+                    <a href="#demo">How</a>
                 </nav>
+            </header>
 
-                <div class="hero-grid" id="top">
-                    <div class="hero-copy">
-                        <p class="eyebrow">Warhammer Rule Assistant</p>
-                        <h1>Quick Reliable Answers</h1>
-                        <p class="hero-text">
-                            The ultimate tool for Warhammer players who want to spend their
-                            time fighting, not searching rulebooks.
-                        </p>
-                        <div class="hero-actions">
-                            <a class="button button-primary" href="#demo">How does it work?</a>
-                            <a class="button button-secondary" href="#audience">Who is it for?</a>
-                        </div>
-                    </div>
-
-                    <aside class="answer-card" aria-label="Example rule answer">
-                        <div class="question-row">
-                            <span>Your question</span>
-                            <strong>40K</strong>
-                        </div>
-                        <p class="question">
-                            "Can I charge after a running ability?"
-                        </p>
-                        <div class="answer-panel active">
-                            <span>Short answer</span>
-                            <p>A short quick answer to your question</p>
-                        </div>
-                        <div class="answer-panel">
-                            <span>Detailed answer</span>
-                            <p>A more extensive answer describing the rules</p>
-                        </div>
-                        <div class="answer-panel">
-                            <span>Source</span>
-                            <p>The official source of the answer</p>
-                        </div>
-                    </aside>
-                </div>
+            <section class="hero" id="top">
+                <h1>Quick Reliable Answers</h1>
+                <p class="lead">
+                    The ultimate tool for Warhammer players who want to spend their
+                    time fighting, not searching rulebooks.
+                </p>
             </section>
 
-            <section class="section concept" id="concept">
-                <div class="section-heading">
-                    <p class="eyebrow">Flow</p>
-                    <h2 class="heading-single-line">Ask. Answer. Play.</h2>
-                </div>
-                <div class="feature-grid">
-                    <article class="feature-card">
+            <section class="section flow" id="concept">
+                <h2>Ask. Answer. Play.</h2>
+                <ul class="flow-list">
+                    <li>
                         <span>01</span>
-                        <h3>Ask</h3>
-                        <p>Ask any rule related question</p>
-                    </article>
-                    <article class="feature-card">
+                        <strong>Ask</strong>
+                        <p>Any rule question, in plain language</p>
+                    </li>
+                    <li>
                         <span>02</span>
-                        <h3>Answer</h3>
-                        <p>Get quick, reliable answers</p>
-                    </article>
-                    <article class="feature-card">
+                        <strong>Answer</strong>
+                        <p>Short reply first, details when you need them</p>
+                    </li>
+                    <li>
                         <span>03</span>
-                        <h3>Play</h3>
-                        <p>Never pause your battles for rules again</p>
-                    </article>
-                </div>
+                        <strong>Play</strong>
+                        <p>Continue your battle, no time wasted</p>
+                    </li>
+                </ul>
             </section>
 
             <section class="section audience" id="audience">
-                <div class="split">
-                    <div>
-                        <p class="eyebrow">Audience</p>
-                        <h2>Built for casual players.</h2>
-                        <p class="section-lead">
-                            Less time searching rules. More time playing. Fewer disputes,
-                            more confidence at the table.
-                        </p>
-                    </div>
-                    <div class="audience-list">
-                        <article>
-                            <h3>New players</h3>
-                            <p>
-                                Learn complex rules through plain-language answers—not
-                                PDFs on every turn.
-                            </p>
-                        </article>
-                        <article>
-                            <h3>Casual groups</h3>
-                            <p>
-                                Resolve table debates quickly and keep the session friendly
-                                and flowing.
-                            </p>
-                        </article>
-                        <article>
-                            <h3>Competitive players</h3>
-                            <p>
-                                Check interactions and edge cases with source-backed answers
-                                before or during events.
-                            </p>
-                        </article>
-                    </div>
+                <div class="audience-intro">
+                    <h2>Built for the table</h2>
+                    <p>
+                        Less time searching rules. More time playing. Fewer disputes,
+                        more confidence when it matters.
+                    </p>
                 </div>
+                <ul class="audience-points">
+                    <li>
+                        <strong>New players</strong>
+                        Learn through answers, not PDFs every turn
+                    </li>
+                    <li>
+                        <strong>Casual groups</strong>
+                        Settle debates quickly and keep the mood friendly
+                    </li>
+                    <li>
+                        <strong>Competitive players</strong>
+                        Check edge cases with source-backed answers
+                    </li>
+                </ul>
             </section>
 
-            <section class="section demo-flow" id="demo">
-                <div class="section-heading">
-                    <p class="eyebrow">Demo</p>
-                    <h2>How it works</h2>
-                </div>
-                <div class="flow" data-flow>
-                    <button class="flow-step active" type="button" data-step="0">
+            <section class="section steps-section" id="demo">
+                <h2>How it works</h2>
+                <ol class="steps">
+                    <li>
                         <span>1</span>
-                        Pick a system
-                    </button>
-                    <button class="flow-step" type="button" data-step="1">
+                        <div>
+                            <strong>Pick a system</strong>
+                            <p>Age of Sigmar or Warhammer 40,000</p>
+                        </div>
+                    </li>
+                    <li>
                         <span>2</span>
-                        Ask a question
-                    </button>
-                    <button class="flow-step" type="button" data-step="2">
+                        <div>
+                            <strong>Ask a question</strong>
+                            <p>Core rules, faction interactions, edge cases</p>
+                        </div>
+                    </li>
+                    <li>
                         <span>3</span>
-                        Read the answer
-                    </button>
-                    <button class="flow-step" type="button" data-step="3">
+                        <div>
+                            <strong>Read the answer</strong>
+                            <p>Short summary, then a detailed explanation</p>
+                        </div>
+                    </li>
+                    <li>
                         <span>4</span>
-                        Check the source
-                    </button>
-                </div>
-                <div class="flow-detail" aria-live="polite">
-                    <p id="flow-label">Choose Age of Sigmar or Warhammer 40,000.</p>
-                </div>
-            </section>
-
-            <section class="section proof">
-                <div class="proof-card">
-                    <p class="eyebrow">Why it matters</p>
-                    <h2>Keep games flowing.</h2>
-                    <div class="metrics">
                         <div>
-                            <strong>2</strong>
-                            <span>Game systems supported</span>
+                            <strong>Check the source</strong>
+                            <p>Official reference and reliability score</p>
                         </div>
-                        <div>
-                            <strong>3</strong>
-                            <span>Answer layers per question</span>
-                        </div>
-                        <div>
-                            <strong>✓</strong>
-                            <span>Reliability score on every answer</span>
-                        </div>
-                    </div>
-                </div>
+                    </li>
+                </ol>
             </section>
         </main>
 
